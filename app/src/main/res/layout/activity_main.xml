@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEEE">
+
+    <com.xu.toolbar.SimpleToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue"
+        app:left_btn="@drawable/ic_user"
+        app:right_btn="@drawable/ic_search"
+        app:title="@string/music_name">
+
+    </com.xu.toolbar.SimpleToolbar>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/border_tab_bottom"
+        android:overScrollMode="never"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:tl_indicator_color="#40808080"
+        app:tl_indicator_corner_radius="5dp"
+        app:tl_indicator_style="BLOCK"
+        app:tl_tab_space_equal="true"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="@color/colorGray40"
+        app:tl_textUnselectColor="@color/colorGray80"
+        app:tl_textsize="16sp">
+
+    </com.flyco.tablayout.SlidingTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"
+        android:layout_marginBottom="@dimen/toolbar_height"
+        android:overScrollMode="never">
+
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/toolbar_height">
+
+    </FrameLayout>
+
+    <com.xu.xmusic.views.MusicView
+        android:id="@+id/musicView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.xu.xmusic.views.MusicView>
+
+</RelativeLayout>

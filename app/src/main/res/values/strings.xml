@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Xmusic</string>
+    <string name="music_name">音乐馆</string>
+
+    <string name="no_vip">没有vip</string>
+    <string name="exit_app">再次返回退出应用</string>
+</resources>

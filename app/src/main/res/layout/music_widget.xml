@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mw_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#d0000000"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/mw_albumimg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mw_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="选择一首音乐"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/mw_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar_style" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mw_previous"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border_circle"
+                android:padding="5dp"
+                android:src="@drawable/ic_previous"
+                android:tint="@color/colorWhite" />
+
+            <ImageView
+                android:id="@+id/mw_play"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/border_circle"
+                android:padding="5dp"
+                android:src="@drawable/ic_play"
+                android:tint="@color/colorWhite" />
+
+            <ImageView
+                android:id="@+id/mw_next"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border_circle"
+                android:padding="5dp"
+                android:src="@drawable/ic_next"
+                android:tint="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="40dp"
+    android:initialLayout="@layout/music_widget"
+    android:previewImage="@mipmap/ic_launcher"
+    android:updatePeriodMillis="1800000">
+
+    <!-- dp 方格数*70-30 -->
+
+</appwidget-provider>

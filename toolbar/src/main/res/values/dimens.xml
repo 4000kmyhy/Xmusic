@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_layout_padding">5dp</dimen>
+    <dimen name="toolbar_btn_size">50dp</dimen>
+    <dimen name="toolbar_btn_padding">10dp</dimen>
+    <dimen name="toolbar_title_size">20sp</dimen>
+    <dimen name="toolbar_subtitle_size">12sp</dimen>
+</resources>

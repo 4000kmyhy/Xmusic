@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorControlHighlight">#40bbbbbb</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorGreen">#00ff00</color>
+    <color name="colorDefault">#fafafa</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorSplash">#b3f2e1</color>
+
+    <color name="colorBlue">#4395FF</color>
+    <color name="colorLightBlue">#aaddff</color>
+    <color name="colorTransBlue">#80aaddff</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray10">#101010</color>
+    <color name="colorGray20">#202020</color>
+    <color name="colorDark">#303030</color>
+    <color name="colorGray40">#404040</color>
+    <color name="colorGray50">#505050</color>
+    <color name="colorGray60">#606060</color>
+    <color name="colorGray70">#707070</color>
+    <color name="colorGray80">#808080</color>
+    <color name="colorGray90">#909090</color>
+    <color name="colorGraya0">#a0a0a0</color>
+    <color name="colorGrayb0">#b0b0b0</color>
+    <color name="colorGrayc0">#c0c0c0</color>
+    <color name="colorGrayd0">#d0d0d0</color>
+    <color name="colorGraye0">#e0e0e0</color>
+    <color name="colorGrayf0">#f0f0f0</color>
+
+    <color name="colorEEE">#eeeeee</color>
+</resources>

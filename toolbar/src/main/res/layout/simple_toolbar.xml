@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/toolbar_layout_padding"
+    android:paddingRight="@dimen/toolbar_layout_padding">
+
+    <ImageView
+        android:id="@+id/toolbar_left_btn"
+        android:layout_width="@dimen/toolbar_btn_size"
+        android:layout_height="@dimen/toolbar_btn_size"
+        android:background="@drawable/bg_toolbar_btn_selector"
+        android:padding="@dimen/toolbar_btn_padding"
+        android:tint="#ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/toolbar_title_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/toolbar_layout_padding"
+        android:layout_marginRight="@dimen/toolbar_layout_padding"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/toolbar_title_size" />
+
+        <TextView
+            android:id="@+id/toolbar_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#dddddd"
+            android:textSize="@dimen/toolbar_subtitle_size"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/toolbar_right_btn"
+        android:layout_width="@dimen/toolbar_btn_size"
+        android:layout_height="@dimen/toolbar_btn_size"
+        android:background="@drawable/bg_toolbar_btn_selector"
+        android:padding="@dimen/toolbar_btn_padding"
+        android:tint="#ffffff"/>
+
+</LinearLayout>

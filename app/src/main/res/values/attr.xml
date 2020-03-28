@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlayPauseView">
+        <attr name="bg_color" format="color" />
+        <attr name="btn_color" format="color" />
+        <attr name="gap_width" format="dimension|reference" />
+        <attr name="space_padding" format="dimension|reference" />
+        <attr name="anim_duration" format="integer" />
+        <attr name="anim_direction">
+            <enum name="positive" value="1" />
+            <enum name="negative" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LyricView">
+        <attr name="lrcTextSize" format="dimension" />
+        <attr name="lrcNormalTextSize" format="dimension" />
+        <attr name="lrcDividerHeight" format="dimension" />
+        <attr name="lrcNormalTextColor" format="reference|color" />
+        <attr name="lrcCurrentTextColor" format="reference|color" />
+        <attr name="lrcTimelineTextColor" format="reference|color" />
+        <attr name="lrcAnimationDuration" format="integer" />
+        <attr name="lrcLabel" format="string" />
+        <attr name="lrcPadding" format="dimension" />
+        <attr name="lrcTimelineColor" format="reference|color" />
+        <attr name="lrcTimelineHeight" format="dimension" />
+        <attr name="lrcPlayDrawable" format="reference" />
+        <attr name="lrcTimeTextColor" format="reference|color" />
+        <attr name="lrcTimeTextSize" format="dimension" />
+        <attr name="lrcTextGravity">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwipePanel">
+        <attr name="leftSwipeColor" format="color" />
+        <attr name="topSwipeColor" format="color" />
+        <attr name="rightSwipeColor" format="color" />
+        <attr name="bottomSwipeColor" format="color" />
+        <attr name="leftEdgeSize" format="dimension" />
+        <attr name="topEdgeSize" format="dimension" />
+        <attr name="rightEdgeSize" format="dimension" />
+        <attr name="bottomEdgeSize" format="dimension" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="topDrawable" format="reference" />
+        <attr name="rightDrawable" format="reference" />
+        <attr name="bottomDrawable" format="reference" />
+        <attr name="isLeftCenter" format="boolean" />
+        <attr name="isTopCenter" format="boolean" />
+        <attr name="isRightCenter" format="boolean" />
+        <attr name="isBottomCenter" format="boolean" />
+        <attr name="isLeftEnabled" format="boolean" />
+        <attr name="isTopEnabled" format="boolean" />
+        <attr name="isRightEnabled" format="boolean" />
+        <attr name="isBottomEnabled" format="boolean" />
+    </declare-styleable>
+</resources>

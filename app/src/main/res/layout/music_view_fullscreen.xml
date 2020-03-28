@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xu.xmusic.views.SwipePanel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipePanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    android:clickable="true"
+    android:elevation="10dp"
+    app:isLeftCenter="false"
+    app:leftDrawable="@drawable/ic_arrow_down"
+    app:leftEdgeSize="20dp"
+    app:leftSwipeColor="@color/colorBlack">
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.xu.toolbar.SimpleToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_btn="@drawable/ic_arrow_down"
+            app:right_btn="@drawable/ic_more_horiz">
+
+        </com.xu.toolbar.SimpleToolbar>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/colorGrayc0"
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:id="@+id/sb_play"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:secondaryProgress="0"
+                android:splitTrack="false"
+                android:thumb="@drawable/seek_thumb2" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/colorGrayc0"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="30dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/iv_mode"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_toolbar_btn_selector"
+                android:padding="13dp"
+                android:src="@drawable/ic_listloop"
+                android:tint="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_previous"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_circle"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_previous" />
+
+                <com.xu.xmusic.views.PlayPauseView
+                    android:id="@+id/ppv_play"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/border_circle"
+                    app:anim_direction="positive"
+                    app:anim_duration="300"
+                    app:bg_color="@color/colorTransparent"
+                    app:btn_color="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/iv_next"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_circle"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_next" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_list"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_toolbar_btn_selector"
+                android:padding="13dp"
+                android:src="@drawable/ic_musiclist"
+                android:tint="@color/colorWhite" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.xu.xmusic.views.SwipePanel>

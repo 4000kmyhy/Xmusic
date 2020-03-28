@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_height">45dp</dimen>
+
+    <integer name="lrc_animation_duration">1000</integer>
+    <dimen name="lrc_text_size">16sp</dimen>
+    <dimen name="lrc_time_text_size">14sp</dimen>
+    <dimen name="lrc_divider_height">25dp</dimen>
+    <dimen name="lrc_padding">30dp</dimen>
+    <dimen name="lrc_timeline_height">1dp</dimen>
+    <dimen name="lrc_drawable_width">25dp</dimen>
+    <dimen name="lrc_time_width">50dp</dimen>
+</resources>

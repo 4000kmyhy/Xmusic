@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimpleToolbar">
+        <attr name="title" format="string"/>
+        <attr name="subtitle" format="string"/>
+        <attr name="left_btn" format="reference"/>
+        <attr name="right_btn" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SearchToolbar">
+        <attr name="search_left_btn" format="reference"/>
+        <attr name="input_hint" format="string"/>
+        <attr name="is_show_right" format="boolean"/>
+    </declare-styleable>
+</resources>
