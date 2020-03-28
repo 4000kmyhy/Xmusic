@@ -101,13 +101,12 @@ public class MusicDBHelper extends SQLiteOpenHelper {
 
     public int getCount() {
         int count = 0;
-        Cursor cursor = db.query(TABLE_NAME,
-                null, null, null, null, null, null);
+        Cursor cursor = db.query(TABLE_NAME, null, null, null, null, null, null);
         if (cursor.moveToFirst()) {
             count = cursor.getCount();
         }
         cursor.close();
-        return count;
+        return count > 100 ? 100 : count;
     }
 
     public boolean isFav(String songmid) {
