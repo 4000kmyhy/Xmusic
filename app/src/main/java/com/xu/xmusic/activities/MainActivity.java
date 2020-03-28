@@ -150,14 +150,14 @@ public class MainActivity extends BaseActivity implements MainContract.View, Mus
             mPlayerView = new MyMusicPlayerView(getContext());
             musicView.setPlayerView(mPlayerView);
             musicPresenter.getHistory(getContext());
-
-            mPlayerView.setOnMusicPlayerListener(new MyMusicPlayerView.OnMusicPlayerListener() {
-                @Override
-                public void updateMusic(MusicInfo musicInfo) {
-                    playMusic(musicInfo);
-                }
-            });
         }
+
+        mPlayerView.setOnMusicPlayerListener(new MyMusicPlayerView.OnMusicPlayerListener() {
+            @Override
+            public void updateMusic(MusicInfo musicInfo) {
+                playMusic(musicInfo);
+            }
+        });
     }
 
     @Override
