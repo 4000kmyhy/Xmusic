@@ -1,18 +1,18 @@
 # Xmusic
 Android音乐播放器，仿QQ音乐，音乐数据来源于QQ音乐。
 </br>
-APP的界面和功能基本上和[xmaster](https://github.com/xuyiyiyi/xmaster)的音乐一致。因为原来做的xmaster为了先实现功能，代码结构上太乱了，有些逻辑上存在bug，所以决定抽出时间单独把音乐部分拿出来重构，顺便熟悉一下MVP框架。
+APP的界面和功能基本上和[xmaster](https://github.com/xuyiyiyi/xmaster)的音乐一致。
 </br>
-APP使用了MVP框架，降低了代码耦合性，优化了重复的获取和解析数据部分的代码，把原来Activity/Fragment上业务逻辑的处理封装到了Presenter中，布局上也做了一些简化。功能上暂时没有做新增，后续可能会继续模仿QQ音乐，增加新建自定义歌单、下载歌曲等等功能。
+因为原来做的xmaster为了先实现功能，代码结构上太乱了，有些逻辑上存在bug，所以决定抽出时间单独把音乐部分拿出来重构，顺便学习一下MVP框架。
 </br>
-应用截图也是原来的：
+Xmusic APP使用了MVP框架，优化了重复的获取和解析数据部分的代码，降低了代码的耦合性，把原来Activity/Fragment上业务逻辑的处理封装到了Presenter中，布局上也做了一些简化。
 </br>
-<img src="https://github.com/xuyiyiyi/xmaster/raw/master/screenshot/music.jpg" width="200"/>
-<img src="https://github.com/xuyiyiyi/xmaster/raw/master/screenshot/music1.jpg" width="200"/>
-<img src="https://github.com/xuyiyiyi/xmaster/raw/master/screenshot/music2.jpg" width="200"/>
+功能上暂时没有做新增，后续可能会继续模仿QQ音乐，增加新建自定义歌单、下载歌曲等等功能。
 </br>
-<img src="https://github.com/xuyiyiyi/xmaster/raw/master/screenshot/notification.jpg" width="200"/>
-<img src="https://github.com/xuyiyiyi/xmaster/raw/master/screenshot/widget.jpg" width="200"/>
+应用截图如下：
+</br>
+<img src="https://github.com/xuyiyiyi/Xmusic/raw/master/screenshot/xmusic.gif" width="250"/>
+</br>
 # 基本功能
 1.音乐播放、暂停、播放进度。
 </br>
