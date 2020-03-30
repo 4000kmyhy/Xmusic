@@ -26,7 +26,6 @@ import com.xu.xmusic.presenters.MusicSearchPresenter;
 import com.xu.xmusic.utils.MusicPlayerUtils;
 import com.xu.xmusic.utils.StatusBarUtils;
 import com.xu.xmusic.views.MyMusicPlayerView;
-import com.xu.xxplayer.utils.XXPlayerManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -155,11 +154,10 @@ public class MusicSearchFragment extends BaseSwipeBackFragment implements MusicS
 
     private void initPlayer() {
         if (MusicPlayerUtils.isMusicPlayer()) {
-            MyMusicPlayerView mPlayerView = (MyMusicPlayerView) XXPlayerManager.instance().getCurrentPlayer();
-            mPosition = musicAdapter.getPositionBySongmid(mPlayerView.getMusicInfo().getSongmid());
+            mPosition = musicAdapter.getPositionBySongmid(MusicPlayerUtils.getSongmid());
             musicAdapter.setSelect(mPosition);
 
-            mPlayerView.setOnMusicPlayerListener(new MyMusicPlayerView.OnMusicPlayerListener() {
+            MusicPlayerUtils.getMusicPlayer().setOnMusicPlayerListener(new MyMusicPlayerView.OnMusicPlayerListener() {
                 @Override
                 public void updateMusic(MusicInfo musicInfo) {
                     ((MainActivity) mActivity).playMusic(musicInfo);

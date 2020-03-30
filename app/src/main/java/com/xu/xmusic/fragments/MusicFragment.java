@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -26,7 +25,6 @@ import com.xu.xmusic.utils.GlideUtils;
 import com.xu.xmusic.utils.MusicPlayerUtils;
 import com.xu.xmusic.utils.StatusBarUtils;
 import com.xu.xmusic.views.MyMusicPlayerView;
-import com.xu.xxplayer.utils.XXPlayerManager;
 
 import java.util.List;
 
@@ -127,11 +125,10 @@ public class MusicFragment extends BaseSwipeBackFragment implements MusicContrac
 
     private void initPlayer() {
         if (MusicPlayerUtils.isMusicPlayer()) {
-            MyMusicPlayerView mPlayerView = (MyMusicPlayerView) XXPlayerManager.instance().getCurrentPlayer();
-            mPosition = musicAdapter.getPositionBySongmid(mPlayerView.getMusicInfo().getSongmid());
+            mPosition = musicAdapter.getPositionBySongmid(MusicPlayerUtils.getSongmid());
             musicAdapter.setSelect(mPosition);
 
-            mPlayerView.setOnMusicPlayerListener(new MyMusicPlayerView.OnMusicPlayerListener() {
+            MusicPlayerUtils.getMusicPlayer().setOnMusicPlayerListener(new MyMusicPlayerView.OnMusicPlayerListener() {
                 @Override
                 public void updateMusic(MusicInfo musicInfo) {
                     ((MainActivity) mActivity).playMusic(musicInfo);

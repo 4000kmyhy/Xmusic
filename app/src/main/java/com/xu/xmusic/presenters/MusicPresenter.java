@@ -79,13 +79,19 @@ public class MusicPresenter implements MusicContract.Presenter {
     @Override
     public void getFavorite(Context context) {
         MusicDBHelper dbHelper = new MusicDBHelper(context, MusicDBHelper.FAVORITE_DATABASE_NAME);
-        getData(dbHelper.queryData(), 0);
+        List<MusicBean> musicList = dbHelper.queryData();
+        if (musicList.size() > 0) {
+            getData(dbHelper.queryData(), 0);
+        }
     }
 
     @Override
     public void getHistory(Context context) {
         MusicDBHelper dbHelper = new MusicDBHelper(context, MusicDBHelper.HISTORY_DATABASE_NAME);
-        getData(dbHelper.queryData(), 0);
+        List<MusicBean> musicList = dbHelper.queryData();
+        if (musicList.size() > 0) {
+            getData(dbHelper.queryData(), 0);
+        }
     }
 
     private void checkAllFinish() {
